@@ -1,7 +1,7 @@
 from Button import *
 from graphics import *
 
-win = GraphWin("PBset4",400,400)
+win = GraphWin("Character Creator",400,400)
 
 
 def FourEyes():
@@ -54,18 +54,23 @@ def main():
             SN.undraw()
             BN.undraw()
             BN.draw(win)
+            BN.setFill("red")
         if B_SmallNose.isClicked(m):
             BN.undraw()
             SN.undraw()
             SN.draw(win)
+            SN.setFill("blue")
         if B_SharpFace.isClicked(m):
             SpF.undraw()
             SF.undraw()           
-            SpF.draw(win)        
+            SpF.draw(win)
+            SpF.setFill("white")
+            
         if B_SquareFace.isClicked(m):
             SpF.undraw()
             SF.undraw()
             SF.draw(win)
+            SF.setFill("green")
         if B_TwoEyes.isClicked(m):
             FE1.undraw()
             FE2.undraw()
@@ -77,6 +82,9 @@ def main():
             
             TE1.draw(win)
             TE2.draw(win)
+
+            TE1.setFill("pink")
+            TE2.setFill("pink")
         if B_FourEyes.isClicked(m):
             TE1.undraw()
             TE2.undraw()
@@ -90,9 +98,15 @@ def main():
             FE2.draw(win)
             FE3.draw(win)
             FE4.draw(win)
+
+            FE1.setFill("purple")
+            FE2.setFill("purple")
+            FE3.setFill("purple")
+            FE4.setFill("purple")
         if B_Mouth.isClicked(m):
             Mouth.undraw()
             Mouth.draw(win)
+            Mouth.setFill("grey")
         if B_Quit.isClicked(m):
             win.close()
             break
